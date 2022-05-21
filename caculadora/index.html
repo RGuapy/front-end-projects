@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="calculadora">
+		<div id="tela">
+			<p id="resultado"></p>
+		</div>
+		<div id="teclas">
+			<div onclick="apagar()" class="digito cE0">C</div>
+			<div onclick="digPress('/')" class="digito op">/</div>
+			<div onclick="digPress('x')" class="digito op">x</div>
+			<div onclick="digPress('7')" class="digito num">7</div>
+			<div onclick="digPress('8')" class="digito num">8</div>
+			<div onclick="digPress('9')" class="digito num">9</div>
+			<div onclick="digPress('-')" class="digito op">-</div>
+			<div onclick="digPress('4')" class="digito num">4</div>
+			<div onclick="digPress('5')" class="digito num">5</div>
+			<div onclick="digPress('6')" class="digito num">6</div>
+			<div onclick="digPress('+')" class="digito op">+</div>
+			<div onclick="digPress('1')" class="digito num">1</div>
+			<div onclick="digPress('2')" class="digito num">2</div>
+			<div onclick="digPress('3')" class="digito num">3</div>
+			<div onclick="gerarResultado()" class="digito op">=</div>
+			<div onclick="digPress('0')" class="digito cE0 num">0</div>
+			<div onclick="digPress('.')" class="digito">.</div>
+			<div onclick="parabens()" class="digito">XD</div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

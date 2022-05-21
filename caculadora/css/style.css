@@ -1,0 +1,53 @@
+#calculadora{
+	padding-top: 50px;
+	color: white;
+	font-size: 24px;
+	background: #000;
+	width: 600px;
+	height: 850px;
+	margin: auto;
+	border-radius: 20px;
+}
+
+
+#tela{
+	color: black;
+	margin: 0 5%;
+	width: 90%;
+	height: 70px;
+	border: 1px solid green;
+	background: #fff;
+	border-radius: 10px;
+}
+
+#resultado{
+	margin-right: 20px;
+	text-align: right;
+
+}
+
+#teclas{
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 0 10px;
+	margin-top: 50px;
+}
+
+.digito{
+	text-align: center;
+	line-height: 120px;
+	background: #383836;
+	width: 120px;
+	height: 120px;
+	box-shadow: 2px 2px 4px black;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.cE0{
+	width: 260px;
+}
+
+.digito:hover{
+	background: #5f5f5c;
+}
