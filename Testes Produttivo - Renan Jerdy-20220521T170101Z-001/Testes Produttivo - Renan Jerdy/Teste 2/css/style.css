@@ -1,0 +1,345 @@
+/*organizando a parte geral*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+}
+
+
+
+/*organizando o aside (canto esquerdo)*/
+
+aside{
+	border: 1px solid black;
+	height: 100%;
+}
+
+aside > h3{
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*Parte de cima do aside*/
+#logo{
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#logo > img{
+	width: 60%;
+	margin: 0 20%;
+}
+
+#logo > h4, #logo > p{
+	text-align: center;
+}
+
+
+#links h4{
+	background: #414141;
+	padding: 5px;
+	color: white;
+	border-bottom: 1px solid black;
+}	
+
+#links p{
+	background: #595959 ;
+	padding: 10px 5px;
+}
+
+#links a{
+	color: white;
+}
+
+
+/*Usei o espaço vazio para dar uma funcionalidade de escolha de planilha*/
+
+.planilha{
+	background: #92d050;
+	width: 90%;
+	height: 200px;
+	margin: 50px 5%;
+	border: 1px solid black;
+	border-radius: 30px;
+	box-shadow: 1px 2px 4px;
+	text-align: center;
+	line-height: 200px;
+}
+
+.planilha:active{
+	background: #2f4813;
+	color: white;
+}
+
+/*organizando o aside (canto esquerdo)*/
+
+
+
+/*Organizando a parte do meio*/
+
+
+/*O objetivo de deixar todos 75% é para a div "situação" ficar no canto, mas na mesma altura da "pontuação final" */
+article > *{
+	width: 75%;
+	margin: 0 5px;
+	padding: 20px;
+}
+
+
+
+/*section id = dica*/
+#dica > p{
+	margin: 10px 0;
+}
+
+
+#dica h3{	
+	color: #00b050;
+}
+
+#dica h4{
+	text-decoration: underline;
+	padding-right: 300px;
+	padding-bottom: 5px;
+	display: inline;
+	border-bottom: 5px solid #92d050;
+
+}
+
+#dica h4 + h4{
+	border-bottom: 1px solid #818181;
+}
+
+/*section id = dica*/
+
+
+/*section id = grafico*/
+#grafico{
+	border: 1px solid black;
+	border-radius: 30px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#grafico-pizza{
+	margin: 100px auto;
+	width: 360px;
+	height: 360px;
+	border-radius: 50%;
+	justify-content: center;
+	line-height: 360px;
+	background: #c7c7c7;
+	animation-duration: 1s;
+
+}
+
+#grafico-pizza > p{
+	display: none;
+}
+
+.categoria{
+	display: inline-flex;
+}
+
+/*Também usado em "posicao"*/
+.cor{
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	margin-right: 5px;
+	background: #4b73bc;
+	border: 1px solid black;
+	color: white;
+	line-height: 30px;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+}
+
+.cor + p{
+	line-height: 35px;
+}
+
+#nao-conforme{
+	background: #d3354a;
+}
+
+#nao-se-aplica{
+	background:#83ca5c; 
+}
+/*section id = grafico*/
+
+/*section id = pontuacao-situacao*/
+#pontuacao-situacao{
+	padding: 0 5px;
+	margin: 20px 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+/*div id= pontucao*/
+#pontuacao{
+	background: white;
+	padding: 50px;
+	border: 1px solid black;
+	border-radius: 30px;
+	z-index: 1;
+
+}
+
+#pontuacao > *{
+	margin-bottom: 80px;
+}
+
+#pontuacao > h3{
+	text-align: center;
+}
+
+#pontuacao > .categoria{
+	float: right;
+}
+
+#pontuacao > div, #pontuacao > b{
+	
+	display: inline-flex;
+	vertical-align: middle;
+	margin-right: 20px;
+	justify-content: space-between;
+}
+
+#pontuacao > b{
+	width: 1px;
+	margin-right: 0 ;
+}
+
+#pontuacao .cor{
+	width: 20px;
+	height: 20px;
+}
+
+#pontuacao .cor + p{
+	line-height: 20px;
+}
+
+.barra{
+	width: 1%;
+	height: 50px;
+	background-image: linear-gradient(#668ec5, #4980c1, #3b72b3);
+	box-shadow: 2px 1px 5px;
+
+	transition: 0.5s;
+}
+/*div id= pontucao*/
+
+/*div id = situacao*/
+#situacao{
+	height: 90%;
+	margin-left: -20px;
+	text-align: center;
+	color: white;
+	background: #ffc000;
+}
+
+#situacao > h2{
+	height: 20%;
+}
+
+#situacao > h2 + h2{
+	height: 80%;
+	background: #92d050;
+	line-height: 300px;
+}
+/*div id = situacao*/
+/*section id = pontuacao-situacao*/
+
+
+/*deixar mais responsivo*/
+@media (max-width: 1400px){
+	#container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#container>*{
+		width: 90%;
+		margin: 0 5%;
+	}
+
+
+	#logo > img{
+		width: 30%;
+		margin: 0 35%;
+	}
+
+	#planilhas{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	article > *{
+		width: 100%;
+		margin: 0;
+		padding: 20px 0;
+	}
+
+	#dica{
+		text-align: center;
+	}
+
+	#dica h4{
+		padding-right: 200px;
+		margin-right: 20px;
+	}
+
+
+	#pontuacao-situacao{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#pontuacao{
+		width: 100%;
+	}
+
+	#pontuacao > b{
+		margin-right: 0;
+	}
+
+	#situacao{
+		width: 90%;
+		height: 150px;
+		margin: -2px 5%;
+
+	}
+
+	#situacao > h2 + h2{
+		line-height: 100px;
+	}
+}
+
+@media (max-width: 700px){
+	#dica h4{
+		padding-right: 100px;
+		margin-right: 10px;
+	}
+
+	#planilhas{
+		display: block;
+		margin-top: 10px;
+	}
+
+	.planilha{
+		width: 90%;
+		height: 75px;
+		margin-top: 0;
+		line-height: 75px;
+	}
+
+
+}

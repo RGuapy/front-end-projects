@@ -1,0 +1,131 @@
+*{
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*mesma cor em lugares diferentes*/
+.verde{
+	color: #66b03f;
+}
+
+/*container*/
+#container{
+	width: 90%;
+	margin: 10px 5%;
+}
+
+#container > *{
+	margin: 10px 0;
+}
+/*container*/
+
+
+/*header*/
+header > *{
+	margin: 10px 0;
+}
+
+#numero-pagina{
+	text-align: right;
+}
+/*header*/
+
+
+/*parte principal*/
+section{
+	margin: 20px;
+}
+
+section	h3{
+	text-align: center;
+	color: #838383;
+}
+/*parte principal*/
+
+
+/*Evidencias fotograficas*/
+#galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cartao{
+	width: 400px;
+	height: 300px;
+	border: 1px solid black;
+	margin: 20px 30px;
+	transition: 0.5s;
+}
+
+.cartao img{
+	width: 96%;
+	height: 70%;
+	margin: 5px 2%;
+	background: #d8d8d8;
+	border: 2px	solid #6a6a6a;	
+}
+
+.cartao small{
+	margin-left: 5px;
+}
+/*Evidencias fotograficas*/
+
+
+/*caixas das informações e do Mapa*/
+.caixa{
+	border: 1px solid black;
+	margin: 30px 0;
+}
+
+.caixa h3{
+	background: #50a423;
+	color: white;
+	padding: 5px 0;
+}
+/*caixas das informações e do Mapa*/
+
+
+/*informações gerais*/
+.informacao{
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.informacao p{
+	padding: 0 20px;
+}
+/*informações e Mapa*/
+
+/*mapa*/
+.caixa iframe{
+	width: 100%;
+}
+/*mapa*/
+
+
+/*footer*/
+footer > *{
+	margin: 10px 0;
+}
+
+footer img{
+	margin: 0;
+	float: right;
+}
+/*footer*/
+
+
+/*interação com o mouse*/
+
+/*aumenta a imagem para ver melhor*/
+.cartao:hover{
+	width: 600px;
+	height: 450px;
+}

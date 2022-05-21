@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DashBoard | Produttivo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!--um div para conter todos-->
+	<div id="container">
+
+		<!--parte esquerda da tela-->
+		<aside>	
+			<div id= logo>
+				<img src="images/produttivo.png">
+				<h4><strong>DASHBOARD</strong></h4>
+				<p>Formulário Exemplo</p>
+			</div>
+
+			<div id="links">
+				<h4>links úteis</h4>
+				<p><a href="#">Centro de Ajuda</a></p>
+				
+			</div>
+
+				<h3>Clique na Planilha que queria Representar:</h3>
+			<div id="planilhas">
+				<!--planilha1 são os dados do arquivo excel-->
+				<div class="planilha" onclick="graficoPizza(22,15,7) ">Planilha 1</div>
+				<div class="planilha" onclick="graficoPizza(50,25,16)">Planilha 2</div>
+				<div class="planilha" onclick="graficoPizza(15,50,40)">Planilha 3</div>
+				<div class="planilha" onclick="graficoPizza(87,32,20)">Planilha 4</div>
+			</div>
+		</aside>
+
+		<!--Parte do meio-->
+		<article>
+			<!--Introdução com dica-->
+			<section id="dica">
+				<h3>DICA:</h3>
+				<p>Este é apenas um dos vários gráficos com indicadores que podemos gerar pra você.</p>
+				<p>Acessse a nossa central de ajuda ou solicite a sua customização com nosso time de suporte.</p>
+				<h4>Dashboard</h4>
+				<h4>DADOS</h4>
+			</section>
+
+			<!--Grafico que demonstra os valores em pedaços de um círculo-->
+			<section id="grafico">
+				<div id="grafico-pizza">
+					<h2 id="selecione">Selecione uma planilha</h2>
+				</div>
+				<div class="categoria">
+					<div class="cor" id="conforme"></div> 
+					<p>Conforme </p>
+				</div>
+				<div class="categoria">
+					<div class="cor" id="nao-conforme"></div> 
+					<p>Não conforme</p>
+					 </div>
+				<div class="categoria">
+					<div class="cor" id="nao-se-aplica"></div> 
+					<p>Não se aplica</p> 
+				</div>
+			</section>
+
+			<!--parte inferior que se divide nas barras de representação de porcentagem e situação-->
+			<section id="pontuacao-situacao">
+				<div id="pontuacao">	
+					<h3><strong>Pontuação total</strong></h3>
+
+					<div class="categoria">
+						<div class="cor"></div> 
+						<p>pontuação total</p>
+					</div><br>
+
+					<div id="barra1" class="azul barra"></div>
+					<b class="porcentagem">-</b>
+					<br>
+					<div id="barra2" class="azul barra"></div>
+					<b class="porcentagem">-</b>	
+				</div>
+
+				<div id="situacao">
+					<h2>Situação </h2>
+					<h2 id="resultado">-</h2>
+				</div>
+				
+			</section>
+
+		</article>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
